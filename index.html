@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17120e">
+  <meta name="description" content="Pollo a la brasa, recién hecho y lleno de sabor. Descubre nuestro menú y haz tu pedido.">
+  <title>Brasa Viva — Pollo a la brasa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="Brasa Viva, inicio"><span class="brand-mark" aria-hidden="true">🔥</span><span>BRASA<span class="brand-light">VIVA</span></span></a>
+    <nav class="nav" aria-label="Navegación principal">
+      <a href="#menu">Menú</a><a href="#nosotros">Nuestra brasa</a><a href="#visitanos">Visítanos</a>
+    </nav>
+    <a class="button button-small" href="#menu">Pedir ahora <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> FUEGO LENTO · SABOR DE VERDAD</p>
+        <h1>El sabor que<br>enciende <span>todo.</span></h1>
+        <p class="hero-description">Pollo a la brasa doradito, directo del fuego a tu mesa. Hecho con paciencia, servido con cariño.</p>
+        <div class="hero-actions"><a class="button" href="#menu">Explora el menú <span aria-hidden="true">→</span></a><a class="text-link" href="#nosotros">Conoce nuestra historia <span aria-hidden="true">↗</span></a></div>
+        <div class="hero-note"><span class="note-icon" aria-hidden="true">✦</span><span>Marinado por 24 horas<br><strong>La diferencia se siente.</strong></span></div>
+      </div>
+      <div class="hero-art" aria-label="Ilustración decorativa de pollo a la brasa">
+        <div class="art-glow"></div><div class="art-ring ring-one"></div><div class="art-ring ring-two"></div>
+        <div class="food-plate"><span role="img" aria-label="Pollo asado">🍗</span></div>
+        <div class="art-label label-top">RECIÉN HECHO <span>✦</span></div><div class="art-label label-bottom">100% BRASA <span>↗</span></div>
+        <span class="spark spark-one">✳</span><span class="spark spark-two">✦</span>
+      </div>
+      <a class="scroll-hint" href="#menu"><span></span> DESLIZA PARA DESCUBRIR</a>
+    </section>
+
+    <section class="menu-section" id="menu">
+      <div class="section-heading"><div><p class="eyebrow">DIRECTO DE NUESTRA COCINA</p><h2>Favoritos de la casa</h2></div><p class="section-hint">Arrastra para explorar <span aria-hidden="true">↔</span></p></div>
+      <div class="carousel-wrap">
+        <button class="carousel-arrow arrow-prev" type="button" aria-label="Ver platos anteriores">←</button>
+        <div class="carousel" id="menu-carousel" tabindex="0" aria-label="Carrusel de platos. Usa las flechas del teclado o arrastra.">
+          <article class="dish-card" data-index="0"><div class="dish-image dish-one"><span role="img" aria-label="Pollo a la brasa">🍗</span><span class="dish-tag">EL CLÁSICO</span></div><div class="dish-info"><div><h3>Pollo a la brasa</h3><p>Dorado, jugoso, inolvidable.</p></div><span class="price">Desde<br><strong>$12</strong></span></div></article>
+          <article class="dish-card" data-index="1"><div class="dish-image dish-two"><span role="img" aria-label="Papas fritas">🍟</span><span class="dish-tag">PARA COMPARTIR</span></div><div class="dish-info"><div><h3>Papas de la casa</h3><p>Crujientes y recién hechas.</p></div><span class="price">Desde<br><strong>$5</strong></span></div></article>
+          <article class="dish-card" data-index="2"><div class="dish-image dish-three"><span role="img" aria-label="Ensalada fresca">🥗</span><span class="dish-tag">FRESCO</span></div><div class="dish-info"><div><h3>Ensalada fresca</h3><p>El toque fresco que completa.</p></div><span class="price">Desde<br><strong>$6</strong></span></div></article>
+          <article class="dish-card" data-index="3"><div class="dish-image dish-four"><span role="img" aria-label="Salsa de la casa">🌶️</span><span class="dish-tag">HECHA EN CASA</span></div><div class="dish-info"><div><h3>Salsas de la casa</h3><p>Un secreto para cada bocado.</p></div><span class="price">Desde<br><strong>$2</strong></span></div></article>
+        </div>
+        <button class="carousel-arrow arrow-next" type="button" aria-label="Ver más platos">→</button>
+      </div>
+      <div class="carousel-dots" aria-label="Seleccionar plato"><button class="dot active" aria-label="Plato 1" type="button"></button><button class="dot" aria-label="Plato 2" type="button"></button><button class="dot" aria-label="Plato 3" type="button"></button><button class="dot" aria-label="Plato 4" type="button"></button></div>
+    </section>
+
+    <section class="story" id="nosotros"><div class="story-icon" aria-hidden="true">♨</div><div><p class="eyebrow">EL SECRETO ESTÁ EN EL FUEGO</p><h2>Sin apuro.<br><span>Como debe ser.</span></h2></div><p class="story-copy">Elegimos buenos ingredientes, los dejamos tomar sabor y respetamos el tiempo de la brasa. Porque lo rico no se apura.</p><a class="story-link" href="#visitanos">Ven a probarlo <span aria-hidden="true">↗</span></a></section>
+
+    <section class="visit" id="visitanos"><div><p class="eyebrow">TE ESPERAMOS</p><h2>La mesa está<br>lista para ti.</h2></div><div class="visit-details"><p>Ven por tu favorito, reúne a los tuyos<br>y deja que nosotros prendamos la brasa.</p><a class="button" href="https://maps.google.com/?q=polleria" target="_blank" rel="noreferrer">Encuéntranos <span aria-hidden="true">↗</span></a></div></section>
+  </main>
+  <footer><a class="brand" href="#inicio"><span class="brand-mark" aria-hidden="true">🔥</span><span>BRASA<span class="brand-light">VIVA</span></span></a><span>Hecho con fuego y cariño. © <span id="year"></span></span><a href="#inicio">Volver arriba ↑</a></footer>
+</body>
+</html>
